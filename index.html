@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Weather App By Keshab</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Comfortaa:wght@300..700&family=Merienda:wght@300..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+
+</head>
+
+<body>
+
+    <div class="container">
+
+        <div class="search">
+            <form>
+                <div>
+                    <input id="inpCity" type="text" placeholder="Enter City Name: " spellcheck="false">
+                    <label id="wrongCity" >Wrong City Name!</label>
+                </div>
+                <button type="submit">
+                    <img src="images/search.png" alt="">
+                </button>
+            </form>
+        </div>
+
+        <div class="currentWeather">
+            <div class="card1">
+                <p id="temp">22°C</p>
+                <p id="feels-like">Feels Like: </p>
+                <p id="city">Bangalore</p>
+                <p id="longLat">(64.123, 64.456)</p>
+            </div>
+            <div class="card2">
+                <div id="weatherImg"><img id="wimg" src="images/clear.png" alt=""></div>
+                <div id="temp-max-min-rain">
+                    <p id="temp-max">Max: 22°C</p>
+                    <p id="temp-min">Min: 22°C</p>
+                    <p id="rain">Rain: 1.23 ml</p>
+                </div>
+            </div>
+            <div class="card3">
+                <div id="humidity-wind">
+                    <div>
+                        <img src="images/humidity.png" alt="">
+                        <p id="humidity"><span>Humidity: </span>48%</p>
+                    </div>
+                    <div>
+                        <img src="images/wind.png" alt="">
+                        <p id="windspeed"><span>Wind: </span>5.3 km/h</p>
+                    </div>
+                </div>
+                <div>
+                    <p id="ghust">Ghust: 5.2 km/h</p>
+                    <br>
+                    <p id="visibility">Visibility: 100m</p>
+                </div>
+            </div>
+        </div>
+
+        <div class="nextFiveDaysWeatehr">
+
+            <div class="day1 nextDayWeatehr">
+                <p>Day 1</p>
+                <p id="tempDay1">22°C</p>
+                <p id="feels-likeDay1">Feels Like: 22°C</p>
+                <div id="weatherImgDay1"><img src="images/clouds.png" alt=""></div>
+                <p id="rainDay1">rain</p>
+
+            </div>
+            <div class="day2 nextDayWeatehr">
+                <p>Day 2</p>
+
+                <p id="tempDay2">22°C</p>
+                <p id="feels-likeDay2">Feels Like: 22°C</p>
+                <div id="weatherImgDay2"><img src="images/clouds.png" alt=""></div>
+                <p id="rainDay2">Rain: 2.36ml</p>
+
+            </div>
+            <div class="day3 nextDayWeatehr">
+                <p>Day 3</p>
+                <p id="tempDay3">22°C</p>
+                <p id="feels-likeDay3">Feels Like: 22°C</p>
+                <div id="weatherImgDay3"><img src="images/clouds.png" alt=""></div>
+                <p id="rainDay3">Rain: 2.36ml</p>
+
+            </div>
+            <div class="day3 nextDayWeatehr">
+                <p>Day 4</p>
+                <p id="tempDay4">22°C</p>
+                <p id="feels-likeDay4">Feels Like: 22°C</p>
+                <div id="weatherImgDay4"><img src="images/clouds.png" alt=""></div>
+                <p id="rainDay4">Rain: 2.36ml</p>
+
+            </div>
+            <div class="day3 nextDayWeatehr">
+                <p>Day 5</p>
+                <p id="tempDay5">22°C</p>
+                <p id="feels-likeDay5">Feels Like: 22°C</p>
+                <div id="weatherImgDay5"><img src="images/clouds.png" alt=""></div>
+                <p id="rainDay5">Rain: 2.36ml</p>
+
+            </div>
+
+
+        </div>
+
+        <div class="anyDayDeatiledWeatehr">
+        </div>
+    </div>
+
+
+
+    <script src="script.js"></script>
+</body>
+
+</html>
